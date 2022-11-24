@@ -4,14 +4,15 @@
     {
         static void Main(string[] args)
         {
-            int baseNumber = 2;
-            Console.WriteLine("Enter the power value:");
-            int power = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i < power; i++)
+            Console.WriteLine("Enter the number to find harmonic number:");
+
+            int n = Convert.ToInt32(Console.ReadLine());
+            double result = 0;
+            for (int i = 1; i <= n; i++)
             {
-                baseNumber = baseNumber * 2;
+                result += 1 /(double) i;
             }
-            Console.WriteLine(baseNumber);
+            Console.WriteLine($"The harmonic value is: {result}");
         }
     }
 }
